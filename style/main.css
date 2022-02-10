@@ -1,0 +1,122 @@
+:root {
+  --red: #E50914;
+  --black: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ELEMENTOS BASE */
+
+body {
+  background: var(--black);
+  font-family: 'Arial', Times, serif;
+  color: #FFF;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 10px;
+  color: var(--red);
+  font-family: 'Arial Black', Times;
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #FFF;
+}
+
+/* FILME PRINCIPAL */
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/Agents-of-SHIELD.jpg');
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: #FFF;
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.botao:hover {
+  background-color: #FFF;
+  color: #000;
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 30px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carrosel-filmes {
+  margin-top: 5px;
+}
+
+.carrosel-filmes .owl-nav {
+  display: flex;
+  position: relative;
+  top: -15em;
+}
+
+.carrosel-filmes button {
+  background-color: rgba(0,0,0,.50) !important;
+  width: 30px;
+  position: absolute;
+}
+
+.carrosel-filmes .owl-next {
+  right: 10px;
+}
+
+.carrosel-filmes button span {
+  font-size: 35px;
+}
